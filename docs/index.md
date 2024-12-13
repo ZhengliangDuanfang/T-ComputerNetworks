@@ -29,7 +29,7 @@
     - [x] Chapter 2: Physical Layer
         - SONET（待补充）
     - [x] Chapter 3: Data Link Layer
-    - [ ] Chapter 4: MAC Sublayer（进行中）
+    - [x] Chapter 4: MAC Sublayer
     	- 以太网的传输介质（待从王道补充）
     - [ ] Chapter 5: Network Layer
     - [ ] Chapter 6: Transport Layer
