@@ -8,5 +8,12 @@
 
 !!! section "资源目录"
 
-    - [0.x 导论](0-x.md)
-    - ...
+    - [ ] Chapter 1: Introduction 
+    - [x] Chapter 2: Physical Layer
+      - SONET（待补充）
+    - [x] Chapter 3: Data Link Layer
+    - [ ] Chapter 4: MAC Sublayer（进行中）
+    - [ ] Chapter 5: Network Layer
+    - [ ] Chapter 6: Transport Layer
+    - [ ] Chapter 7: Application Layer
+    - [ ] Chapter 8: Network Security

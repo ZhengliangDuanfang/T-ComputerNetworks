@@ -12,3 +12,7 @@ site
 .trash
 .base_repo
 sync_patch.patch
+
+# Local Test Enviroment
+localvenv
+.cache

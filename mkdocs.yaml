@@ -89,7 +89,7 @@ extra_javascript:
 # TODO: 请修改本项配置，本节是导航配置项，一般只需要在下面增加新的章节对应的文件即可，支持结构化配置
 
 nav:
-  - "Home": "https://zhengliangduanfang.github.io/T-ComputerNetworks"
+  - "Home Project": "https://ziji-cs.github.io/"
   - "Main":
     - index.md
     - 1-x.md
