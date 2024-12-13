@@ -1,9 +1,9 @@
-site_name: ZIJI-CS-<课程名称> # TODO: 请修改项配置，将尖括号内的内容替换为课程名称
-repo_name: ZIJI-CS/F-MkDocs-Template # TODO: 请修改项配置，将其设置为对应的仓库
-repo_url: https://github.com/ZIJI-CS/F-MkDocs-Template # TODO: 请修改项配置，将其设置为对应的仓库的 URL，一般替换后缀即可
+site_name: ZhengliangDuanfang-计算机网络 # TODO: 请修改项配置，将尖括号内的内容替换为课程名称
+repo_name: ZhengliangDuanfang/T-ComputerNetworks # TODO: 请修改项配置，将其设置为对应的仓库
+repo_url: https://github.com/ZhengliangDuanfang/T-ComputerNetworks # TODO: 请修改项配置，将其设置为对应的仓库的 URL，一般替换后缀即可
 edit_uri: blob/main/docs
 
-copyright: 'Copyright &copy 2024 ZIJI-CS' # TODO: 请修改项配置，主要就是年份，对的就不用管
+copyright: 'Copyright &copy 2024 ZhengliangDuanfang' # TODO: 请修改项配置，主要就是年份，对的就不用管
 
 theme:
   name: material
@@ -64,7 +64,7 @@ plugins:
   - search:
       separator: '[\s\-\.]+'
   - git-committers:
-      repository: ZIJI-CS/F-MkDocs-Template # TODO: 请修改本项配置，一般同步于 repo_name 即可（如果主分支不叫 main 也请修改 branch 项）
+      repository: ZhengliangDuanfang/T-ComputerNetworks # TODO: 请修改本项配置，一般同步于 repo_name 即可（如果主分支不叫 main 也请修改 branch 项）
       branch: main
   - statistics:
       words_per_minute: 200
@@ -89,7 +89,7 @@ extra_javascript:
 # TODO: 请修改本项配置，本节是导航配置项，一般只需要在下面增加新的章节对应的文件即可，支持结构化配置
 
 nav:
-  - "Home": "https://ziji-cs.github.io/"
+  - "Home": "https://zhengliangduanfang.github.io/T-ComputerNetworks"
   - "Main":
     - index.md
     - 0-x.md
