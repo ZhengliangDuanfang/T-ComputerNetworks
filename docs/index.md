@@ -1,8 +1,5 @@
 # 计算机网络
 
-!!! failure "Help Wanted"
-    列表渲染问题，如Chapter 1 OSI层级部分
-
 !!! info "课程基本信息"
 
     - 课程名称：计算机网络
@@ -16,6 +13,7 @@
         - SONET（待补充）
     - [x] Chapter 3: Data Link Layer
     - [ ] Chapter 4: MAC Sublayer（进行中）
+    	- 以太网的传输介质（从王道补充）
     - [ ] Chapter 5: Network Layer
     - [ ] Chapter 6: Transport Layer
     - [ ] Chapter 7: Application Layer
