@@ -13,7 +13,7 @@
 
     - [ ] Chapter 1: Introduction 
     - [x] Chapter 2: Physical Layer
-      - SONET（待补充）
+        - SONET（待补充）
     - [x] Chapter 3: Data Link Layer
     - [ ] Chapter 4: MAC Sublayer（进行中）
     - [ ] Chapter 5: Network Layer
