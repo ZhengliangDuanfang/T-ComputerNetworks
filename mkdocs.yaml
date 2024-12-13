@@ -63,9 +63,9 @@ plugins:
       enable_creation_date: true
   - search:
       separator: '[\s\-\.]+'
-  - git-committers:
-      repository: ZhengliangDuanfang/T-ComputerNetworks # TODO: 请修改本项配置，一般同步于 repo_name 即可（如果主分支不叫 main 也请修改 branch 项）
-      branch: main
+  # - git-committers: # NOTE: 为了节省性能，暂时关闭该插件
+  #     repository: ZhengliangDuanfang/T-ComputerNetworks # TODO: 请修改本项配置，一般同步于 repo_name 即可（如果主分支不叫 main 也请修改 branch 项）
+  #     branch: main
   - statistics:
       words_per_minute: 200
   - glightbox
