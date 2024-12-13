@@ -1,3 +1,20 @@
+# 计算机网络
+
+- Randomstar 2020.09-2021.01 ZJU本科阶段计算机网络的课程笔记
+- ZhengliangDuanfang 2024.09-2025.01 重写并补充
+
+### 进度
+
+- Chapter 1: Introduction [TODO]
+- Chapter 2: Physical Layer [WORKING]
+  - SONET [TODO]
+- Chapter 3: Data Link Layer [DONE]
+- Chapter 4: MAC Sublayer [WORKING]
+- Chapter 5: Network Layer [TODO]
+- Chapter 6: Transport Layer [TODO]
+- Chapter 7: Application Layer [TODO]
+- Chapter 8: Network Security [TODO]
+
 # ZIJI-CS
 
 请访问 **About** 中的 URL 来访问网页。
