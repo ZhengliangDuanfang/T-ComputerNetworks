@@ -2,7 +2,7 @@
 
 !!! info "笔记基本信息"
 
-    内容范围根据 COMPUTER NETWORKS 第6版英文教材和陆魁军老师2024年提供的[考试范围Excel](./221009.xls)，以
+    内容范围根据 [Computer Networks, Global Edition, 6th edition](https://www.pearson.com/en-gb/subject-catalog/p/computer-networks-global-edition/P200000005535/9781292374017) 和陆魁军老师2024年提供的[考试范围Excel](./221009.xls)，以
     Zhang-Each（RandomStar/小角龙）[2020年的笔记](https://zhang-each.github.io/My-CS-Notebook/Networking/)
     为基本框架。
     
