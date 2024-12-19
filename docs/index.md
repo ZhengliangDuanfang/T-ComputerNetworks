@@ -29,6 +29,8 @@
     - [x] Chapter 2: Physical Layer
     - [x] Chapter 3: Data Link Layer
     - [x] Chapter 4: MAC Sublayer
+        - 待补充：
+            - 4.4.5 802.11 Services
     - [x] Chapter 5: Network Layer
     	- 待补充：
     		- 5.4.3-5.4.5
