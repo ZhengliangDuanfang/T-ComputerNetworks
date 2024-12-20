@@ -35,7 +35,9 @@
     	- 待补充：
     		- 5.4.3-5.4.5
     		- 5.7.7
-    - [ ] Chapter 6: Transport Layer（进行中）
+    - [x] Chapter 6: Transport Layer
+        - 待补充：
+            - 6.2.2
     - [ ] Chapter 7: Application Layer
     - [ ] Chapter 8: Network Security
 
