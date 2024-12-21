@@ -21,7 +21,6 @@
     - 2025王道计算机网络考研辅导
     
     本笔记使用的模板来自[ZIJI-CS项目](https://ziji-cs.github.io/)，可以点击Home Project查看具体信息。
-    如果能顺利写完的话，可能考虑并入该项目。
 
 !!! section "编写进度"
 
