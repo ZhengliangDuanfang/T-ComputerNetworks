@@ -25,28 +25,23 @@
 
 !!! section "编写进度"
 
-    - [ ] Chapter 1: Introduction 
+    - [x] Chapter 1: Introduction（使用小角龙笔记原文）
     - [x] Chapter 2: Physical Layer
     - [x] Chapter 3: Data Link Layer
     - [x] Chapter 4: MAC Sublayer
-        - 待补充：
-            - 4.4.5 802.11 Services
+        - 待补充：4.4.5
     - [x] Chapter 5: Network Layer
-    	- 待补充：
-    		- 5.4.3-5.4.5
-    		- 5.7.7
+    	- 待补充：5.4.3-5.4.5、5.7.7
     - [x] Chapter 6: Transport Layer
-        - 待补充：
-            - 6.2.2
+        - 待补充：6.2.2
     - [x] Chapter 7: Application Layer
-        - 待补充：
-            - 7.5
+        - 待补充：7.5
     - [x] Chapter 8: Network Security
-        - 待补充：
-            - 8.8 及以后
+        - 待补充：8.8 及以后
 
 !!! section "本地运行"
     - 安装Python环境
+    - 将本项目下载或克隆到本地
     - 进入目录 `cd T-ComputerNetworks`
     - 环境建立（只需最开始运行一次）
         - 建立虚拟机 `python -m venv localvenv`
