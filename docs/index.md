@@ -41,7 +41,9 @@
     - [x] Chapter 7: Application Layer
         - 待补充：
             - 7.5
-    - [ ] Chapter 8: Network Security（进行中）
+    - [x] Chapter 8: Network Security
+        - 待补充：
+            - 8.8 及以后
 
 !!! section "本地运行"
     - 安装Python环境
