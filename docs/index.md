@@ -26,7 +26,7 @@
 
     - [x] Chapter 1: Introduction（使用小角龙笔记原文）
     - [x] Chapter 2: Physical Layer
-    	- 待补充：2.2-2.3、2.9
+    	- 待补充：2.2-2.3、2.5.2-DSL、2.9
     - [x] Chapter 3: Data Link Layer
     - [x] Chapter 4: MAC Sublayer
         - 待补充：4.4.5
