@@ -28,6 +28,7 @@
     - [x] Chapter 2: Physical Layer
     	- 待补充：2.2-2.3、2.5.2-DSL、2.9
     - [x] Chapter 3: Data Link Layer
+        - 待补充：3.5.3
     - [x] Chapter 4: MAC Sublayer
     - [x] Chapter 5: Network Layer
     	- 待补充：5.4.3-5.4.5、5.7.7
