@@ -38,7 +38,7 @@
     - [x] [Chapter 7: Application Layer](./7-x.md)
         - 待补充：7.5
     - [x] [Chapter 8: Network Security](./8-x.md)
-        - 待补充：8.8 及以后
+        - 待补充：8.9 及以后
 
 !!! section "本地运行"
     - 安装Python环境
