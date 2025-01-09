@@ -42,7 +42,7 @@
         - 待补充：8.9 及以后
 
 !!! section "本地运行"
-    - 安装Python环境
+    - 安装 Python 环境
     - 将本项目下载或克隆到本地
     - 进入目录 `cd T-ComputerNetworks`
     - 环境建立（只需最开始运行一次）
@@ -55,4 +55,4 @@
         - 访问 `http://localhost:8000/`
 
 !!! section "评论区"
-    暂未设置Giscus，烦请到CC98的[ 这个帖子 ](https://www.cc98.org/topic/6075929)（内网打开）反馈问题。
+    暂未设置 Giscus，烦请直接在代码仓库中提 Issue 或到 CC98 的[ 这个帖子 ](https://www.cc98.org/topic/6075929)（内网打开）反馈问题。
