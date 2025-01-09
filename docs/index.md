@@ -53,3 +53,6 @@
         - Linux: `. localvenv/bin/activate`
     - 运行 `python -m mkdocs serve`
         - 访问 `http://localhost:8000/`
+
+!!! section "评论区"
+    暂未设置Giscus，烦请到CC98的[ 这个帖子 ](https://www.cc98.org/topic/6075929)（内网打开）反馈问题。
