@@ -1,0 +1,1653 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../6-x/">
+      
+      
+        <link rel="next" href="../8-x/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>7: Application Layer - ZhengliangDuanfang-计算机网络</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../supports/css/base.css">
+    
+      <link rel="stylesheet" href="../supports/css/theme.css">
+    
+      <link rel="stylesheet" href="../supports/css/admonitions.css">
+    
+      <link rel="stylesheet" href="https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7-application-layer" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="ZhengliangDuanfang-计算机网络" class="md-header__button md-logo" aria-label="ZhengliangDuanfang-计算机网络" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZhengliangDuanfang-计算机网络
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7: Application Layer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZhengliangDuanfang/T-ComputerNetworks
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ziji-cs.github.io/" class="md-tabs__link">
+        
+  
+    
+  
+  Home Project
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Main
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ZhengliangDuanfang-计算机网络" class="md-nav__button md-logo" aria-label="ZhengliangDuanfang-计算机网络" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ZhengliangDuanfang-计算机网络
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZhengliangDuanfang/T-ComputerNetworks
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ziji-cs.github.io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Main
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Main
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1: Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2: Physical Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3: Data Link Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4: MAC Sublayer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5: Network Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6: Transport Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7: Application Layer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7: Application Layer
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 DNS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 DNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711-dns-lookup-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.1 DNS Lookup Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712-the-dns-name-space-and-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.2 The DNS Name Space and Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-dns-queries-and-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.3 DNS Queries and Responses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-electronical-mail" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Electronical Mail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 Electronical Mail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721-message-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.1 Message Formats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722-message-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.2 Message Transfer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723-final-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.3 Final Delivery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-the-world-wide-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 The World Wide Web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 The World Wide Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#731-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 HTTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732-web-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 Web Privacy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-content-delivery略" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Content Delivery（略）
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8: Network Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 DNS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 DNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711-dns-lookup-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.1 DNS Lookup Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712-the-dns-name-space-and-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.2 The DNS Name Space and Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-dns-queries-and-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.3 DNS Queries and Responses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-electronical-mail" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Electronical Mail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 Electronical Mail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721-message-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.1 Message Formats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722-message-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.2 Message Transfer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723-final-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.3 Final Delivery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-the-world-wide-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 The World Wide Web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 The World Wide Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#731-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 HTTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732-web-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 Web Privacy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-content-delivery略" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Content Delivery（略）
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks/blob/main/docs/7-x.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks/raw/main/docs/7-x.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+<h1 id="7-application-layer">7: Application Layer<a class="headerlink" href="#7-application-layer" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 5673 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 28 分钟</p>
+</div>
+<h2 id="71-dns">7.1 DNS<a class="headerlink" href="#71-dns" title="Permanent link">&para;</a></h2>
+<ul>
+<li>DNS（Domain Name System，域名系统）</li>
+<li>将域名映射到IP地址</li>
+</ul>
+<h3 id="711-dns-lookup-process">7.1.1 DNS Lookup Process<a class="headerlink" href="#711-dns-lookup-process" title="Permanent link">&para;</a></h3>
+<ul>
+<li>DNS将域名映射到IP地址的过程如下。<ul>
+<li>应用程序调用一个库过程（被称为 stub resolver 存根解析器，通常是<code>gethostbyname</code>或其等效函数），并将域名作为参数传递给该函数。</li>
+<li>stub resolver 将包含域名的查询发送到本地DNS解析器（通常称为 local recursive resolver 本地递归解析器 或简称 local resolver 本地解析器），后者随后对一组DNS解析器执行 recursive lookup（递归查询）以查找该域名。<ul>
+<li>local resolver 会向域名各个层级的相应的 name server（被称为该域的 authoritative name server 权威名称服务器）发出查询</li>
+</ul>
+</li>
+<li>local recursive resolver 最终将包含相应IP地址的响应返回给 stub resolver，存根解析器再将结果传递给最初发出查询的函数。</li>
+</ul>
+</li>
+<li>查询和响应消息以UDP数据包的形式发送。</li>
+<li>DNS name server hierarchy<ul>
+<li>local resolver 不会只返回一部分答案。</li>
+<li>root name server（以及后续的每个名称服务器）不会为 local name server 递归查询</li>
+<li>local resolver 通过进一步发出 iterative queries 来继续解析。</li>
+</ul>
+</li>
+<li>local server 域中的主机不需要被配置为一个有完整域名的服务器，能访问 local resolver 即可。</li>
+<li>每次查询包含一个 16-bit transaction identifier（事务标识符），包含在响应中。<ul>
+<li>用于让 name server 将查询映射到响应。</li>
+</ul>
+</li>
+<li>caching：每个 answer都会被缓存<ul>
+<li>每个 DNS resource record 中都包含 TTL（Time to live）。</li>
+</ul>
+</li>
+<li>DNS的查询格式<ul>
+<li>包括被查询的名称（QNAME），以及事务标识符等其它复制信息</li>
+<li>事务标识符最初只有16位，查询和响应没有加密，导致 cache poisoning attack 等各种攻击<ul>
+<li>使用 0x20 encoding 来防御缓存投毒攻击。</li>
+</ul>
+</li>
+<li>QNAME minimization：本地解析器只发送查询中相应 authoritative name server 能够解析的部分，而不是FQDN（fully qualified domain name，完全限定域名）</li>
+</ul>
+</li>
+</ul>
+<h3 id="712-the-dns-name-space-and-hierarchy">7.1.2 The DNS Name Space and Hierarchy<a class="headerlink" href="#712-the-dns-name-space-and-hierarchy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>域名 hierarchy（层次结构）的顶层由ICANN（Internet Corporation for Assigned Names and Numbers）负责。</p>
+<ul>
+<li>
+<p>分为 gTLD（generic Top Level Domain，通用域名）与 ccTLD（country code Top Level Domain，国家域名）</p>
+</li>
+<li>
+<p>现在 gTLD 可以选择任意顶级域名，包括非拉丁字符。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>二级域名的获取由 registries（注册局）负责</p>
+</li>
+<li>
+<p>再下一级，registrars（注册商）直接向用户销售域名。</p>
+</li>
+<li>
+<p>域名层次结构的每一层用<code>.</code>分隔。</p>
+<ul>
+<li>从技术上讲，所有FQDN都以<code>.</code>结尾，表示DNS层次结构的根，但大多数操作系统会自动补全这一部分。<ul>
+<li>以句点结束的称为 absolute domain name，否则为 relative domain name。</li>
+</ul>
+</li>
+<li>每个域名通过从它到根的路径向上命名。</li>
+</ul>
+</li>
+<li>
+<p>域名不分大小写（case-insensitive）</p>
+</li>
+<li>
+<p>域名的每个 component name 最多可以有63个字符，完整路径名称不得超过255个字符。</p>
+</li>
+<li>
+<p>要创建一个新域名，需要获得其所在域名的许可。一旦创建并注册了新域名，无需从树的更高层获得任何人的许可即可创建子域名。</p>
+</li>
+</ul>
+<h3 id="713-dns-queries-and-responses">7.1.3 DNS Queries and Responses<a class="headerlink" href="#713-dns-queries-and-responses" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>DNS Queries</p>
+<ul>
+<li>最常见的称为 A record query，要求将域名映射到相应互联网端点的IP地址。</li>
+<li>DNS可以用于查找 DNSBL (DNS-based blacklist) 中的域名。<ul>
+<li>客户端需要向特殊DNS服务器（如<code>pbl.spamhaus.org</code>，一个 policy blacklist）发送 A record query</li>
+<li>要查找特定IP地址，客户端只需反转IP地址的八位字节，并将结果添加到<code>pbl.spamhaus.org</code>前面。例如，要查找<code>127.0.0.2</code>，客户端只需发出对<code>2.0.0.127.pbl.spamhaus.org</code>的查询。</li>
+<li>如果相应的IP地址在列表中，DNS查询将返回一个IP地址，该地址通常编码一些附加信息.</li>
+<li>如果不在，返回相应的NXDOMAIN响应。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Extensions and Enhancements to DNS Queries</p>
+<ul>
+<li>EDNS0 CS Extended DNS Client Subnet（EDNS Client Subnet，EDNS0 CS）<ul>
+<li>local recursive resolver 将 stub resolver 的 IP address subnet 发送给 authoritative name server，让它看到发起查询的客户端的IP子网。</li>
+</ul>
+</li>
+<li>0x20 encoding: local recursive server 会切换QNAME中每个字符的大小写，用域名中的每个字母的大小写为 DNS transaction identifier 编码一个额外的位。<ul>
+<li>其他解析器不应在后续的迭代查询或响应中更改QNAME的大小写。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DNS Responses and Resource Records</p>
+<ul>
+<li>
+<p>在 DNS database 中，对每个域名关联IP地址之外的信息。</p>
+</li>
+<li>
+<p>每个 resource record 是一个 five-tuple：<code>Domain_name Time_to_live Class Type Value</code></p>
+<ul>
+<li>
+<p>域名：作为 primary search key</p>
+</li>
+<li>
+<p>TTL：对于不同稳定性的域名，分配不同的生成时间</p>
+</li>
+<li>
+<p>Class：对于互联网信息，它始终是IN。</p>
+</li>
+<li>
+<p>Type与对应的Value字段存储的内容：见下图。</p>
+<p><a class="glightbox" href="../static/image-20241220093332334.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220093332334" src="../static/image-20241220093332334.png" /></a></p>
+<ul>
+<li>SOA record 提供了 name server 所在区域的 primary source of information 的名称、管理员的电子邮件地址、唯一的 serial number 以及各种标志和超时。</li>
+<li>A record（Address）：某个主机的接口的32位IPv4地址。</li>
+<li>
+<p>AAAA record（quad A）：128位的IPv6地址。</p>
+<ul>
+<li>DNS解析器可能会为一个域名返回多个IP地址。</li>
+</ul>
+</li>
+<li>
+<p>NS record（Name Server）：指定域名或子域的 name server。</p>
+<ul>
+<li>name server 是一个拥有域名数据库副本的主机</li>
+</ul>
+</li>
+<li>
+<p>MX record（Mail Exchange）：根据email地址的域名寻找该网站的邮件服务器</p>
+</li>
+<li>
+<p>CNAME record（Canonical Name）：记录网站别名</p>
+<ul>
+<li>record 举例：<code>www.cs.uchicago.edu 120 IN CNAME hnd.cs.uchicago.edu</code></li>
+</ul>
+</li>
+<li>
+<p>PTR record（Pointer）指向另一个域名，用于将IP地址与相应的名称关联起来</p>
+<ul>
+<li>将名称与相应IP地址关联的PTR查找通常称为 reverse lookups（反向查找）</li>
+</ul>
+</li>
+<li>
+<p>SRV record 允许为域中的给定服务标识主机。</p>
+<ul>
+<li>类似于 MX record，但MX只用于邮件</li>
+</ul>
+</li>
+<li>
+<p>SPF record（Sender Policy Framework）：在域名中编码关于哪些机器可以向互联网的其他部分发送邮件的信息。</p>
+<ul>
+<li>举例：从自称dodgy的机器接收邮件，但域名记录表明邮件只能由名为smtp的机器发送，那么这封邮件很可能是伪造的垃圾邮件。</li>
+</ul>
+</li>
+<li>
+<p>TXT record 最初是为了允许域名以任意方式 identify 自己。如今，它们通常编码机器可读的信息，通常是SPF信息。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DNSSEC Records</p>
+<ul>
+<li>DNSSEC record 在 DNS name server 的响应中携带数字签名，local / stub resolver 可以验证这些签名，以确保 DNS record 未被篡改。</li>
+<li>每个DNS服务器使用其私钥计算每组 resource records 的 RRSET（Resource Record Set）的哈希值。相应的公钥可用于验证RRSET上的签名。</li>
+<li>每个主机当然需要保证这个公钥的真实性，因此需要父名称服务器给权威名称服务器的公钥签名。举例来说，<code>.edu</code>的权威名称服务器给<code>.chicago.edu</code>的权威名称服务器的公钥签名。</li>
+<li>
+<p>DNSSEC有两个与公钥相关的资源记录：</p>
+<p>(1) RRSIG记录，对应于使用相应权威名称服务器私钥签名的RRSET的签名。</p>
+<p>(2) DNSKEY记录，是相应RRSET的公钥，由父服务器的私钥签名。</p>
+</li>
+<li>
+<p>只有 root-level public keys 必须以 out-of-band 的形式分发。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>DNS Zones</p>
+<ul>
+<li>
+<p>DNS resource record 的 database，称为 DNS zone file 或者 DNS zone</p>
+<p><a class="glightbox" href="../static/image-20241220151117237.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220151117237" src="../static/image-20241220151117237.png" /></a></p>
+</li>
+<li>
+<p>单个name server可以包含整个DNS database，但是它一宕机服务可能就挂了。</p>
+<ul>
+<li>
+<p>将 DNS name space 分为 nonoverlapping zones</p>
+<p><a class="glightbox" href="../static/image-20241220151153388.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220151153388" src="../static/image-20241220151153388.png" /></a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Name Resolution（域名解析）</p>
+<ul>
+<li>
+<p>查找域名并找到IP地址的过程。</p>
+</li>
+<li>
+<p>如果 resolver 对某个域名有对应 record，回将查询结果返回、</p>
+<ul>
+<li>如果所查询的域名属于该 name server 的管辖范围，它将返回 authoritative record<ul>
+<li>例如<code>top.cs.vu.nl</code>属于<code>cs.vu.nl</code></li>
+<li>authoritative record 一定是正确的，cached record 则不一定。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>如果域名是 remote 的，没有本地滑轮，则 name server 开始 remote query，流程见下图。</p>
+<ul>
+<li>有13个 root DNS server，对它们的查询通过 anycast routing 传递到离目标地址的最近实例。（注：anycast routing 任播 在考试范围表中标为不考。）</li>
+</ul>
+<p><a class="glightbox" href="../static/image-20241220152413043.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220152413043" src="../static/image-20241220152413043.png" /></a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="72-electronical-mail">7.2 Electronical Mail<a class="headerlink" href="#72-electronical-mail" title="Permanent link">&para;</a></h2>
+<ul>
+<li>电子邮件系统目前已经与文件传输协议分离。</li>
+<li>邮件系统分为两部分：<ul>
+<li>user agent（用户代理）允许人们阅读和发送电子邮件<ul>
+<li>发送邮件的动作称为 mail submission。</li>
+<li>不会直接显示 message field 的原始内容，而是作了用户友好化处理。</li>
+<li>message disposition（消息处置）：删除、回复、转发等。</li>
+<li>可以自动进行 filing（归档）操作，比如垃圾邮件、收件箱等。<ul>
+<li>垃圾邮件可能来自 botnet（僵尸网络）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>message transfer agents（消息传输代理，也称 mail server）负责将消息从发送方传输到接收方。<ul>
+<li>为系统进程</li>
+<li>SMTP（Simple Mail Transfer Protocol）：将邮件从 originator 移动到 recipient。<ul>
+<li>必须报告 delivery status。</li>
+</ul>
+</li>
+<li>包含 mailing list（即群发列表）等高级功能。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>mailbox 由 mail servers 维护。<ul>
+<li>user agent 可以向 mail servers 发送命令操作邮箱。</li>
+</ul>
+</li>
+<li>电子邮件在 mail servers 之间以某种标准格式发送。</li>
+<li>envelope 封装了消息并包含传输所需的信息，消息传输代理也使用信封的信息进行路由。<ul>
+<li>信封内的消息由 header 与 body 组成。<ul>
+<li>头部包含 user agent 的控制信息。</li>
+<li>正文完全是为人类收件人准备的，代理程序并不太关心它。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a class="glightbox" href="../static/image-20250108150155978.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20250108150155978" src="../static/image-20250108150155978.png" /></a></p>
+<h3 id="721-message-formats">7.2.1 Message Formats<a class="headerlink" href="#721-message-formats" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>RFC 5322 The Internet Message Format</p>
+<ul>
+<li>
+<p>基于RFC 822，并未明确区分信封字段和头字段。</p>
+</li>
+<li>
+<p>消息由一个primitive envelope、一些header fields（头字段）、一个blank line、消息正文组成。</p>
+<ul>
+<li>每个header field（逻辑上）由一行ASCII文本组成，包含field name、colon（冒号）以及（大多数字段都有的）字段的值。</li>
+</ul>
+</li>
+<li>
+<p>下图中为消息传输相关的主要头字段。</p>
+<ul>
+<li>
+<p>Cc：Carbon copy，抄送</p>
+</li>
+<li>
+<p>Bcc：Blind carbon copy，密送</p>
+</li>
+<li>
+<p>每经过一个 message transfer agent，都要加一行 Received 字段。</p>
+</li>
+<li>
+<p>Return-Path 字段由最后一个 message transfer agent 添加。</p>
+<p><a class="glightbox" href="../static/image-20241220160447887.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220160447887" src="../static/image-20241220160447887.png" /></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>还有一些主要供人类阅读的字段。</p>
+<ul>
+<li>
+<p>Reply-to：用于告知收件人有事不要给发件人发邮件，要给这个字段这个人回复。</p>
+</li>
+<li>
+<p>Message-Id：自动生成的数据，用于消息之间相互引用。</p>
+</li>
+<li>
+<p>RFCC 5322明确允许用户自己创造头字段，要以<code>X-</code>开头。</p>
+<p><a class="glightbox" href="../static/image-20241220160922731.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220160922731" src="../static/image-20241220160922731.png" /></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>后面是 message body，用户可以在这里填写任何内容。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>MIME The Multipurpose Internet Mail Extensions RFC 2045</p>
+<ul>
+<li>
+<p>继续使用RFC 822格式，但在消息正文中添加结构，并为非ASCII消息的传输定义编码规则。</p>
+</li>
+<li>
+<p>添加了5个新的消息头字段。</p>
+<p><a class="glightbox" href="../static/image-20241220162442303.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220162442303" src="../static/image-20241220162442303.png" /></a></p>
+<ul>
+<li>任何不包含MIME-Version头字段的消息都被视为使用ASCII字符的消息处理</li>
+<li>Content-Description：是ASCII字符串，为必需字段，说明消息中包含什么内容。</li>
+<li>Content-Id：格式与Message-Id一致。</li>
+<li>
+<p>Content-Transfer-Encoding：表示消息正文如何编码。有5种。</p>
+<ol>
+<li>每行不超过1000个每个7bit的ASCII字符</li>
+<li>每行不超过1000个8位编码的的字符</li>
+<li>二进制编码，不限制长度<ul>
+<li>对于不支持二进制数据的mail server，将二进制数据用 ASCII 编码（base64 MIME）<ul>
+<li>24位组被分解为四个6位单元，每个单元作为合法的ASCII字符发送。</li>
+<li>编码为A表示0，B表示1，依此类推，接着是小写字母、10个数字，最后是+和/分别表示62和63。==和=序列表示最后一组分别只包含8或16位。回车符和换行符被忽略。</li>
+<li>可以安全发送任意二进制文本</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Content-Type</p>
+<p><a class="glightbox" href="../static/image-20241220162220795.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220162220795" src="../static/image-20241220162220795.png" /></a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="722-message-transfer">7.2.2 Message Transfer<a class="headerlink" href="#722-message-transfer" title="Permanent link">&para;</a></h3>
+<ul>
+<li>SMTP (Simple Mail Transfer Protocol) and Extensions<ul>
+<li>包括mail submission和在消息传输代理之间传输消息两种用途。<ul>
+<li>final delivery 不使用SMTP</li>
+</ul>
+</li>
+<li>mail server 使用SMTP监听 TCP port 25 来进行 delivery（交付）<ul>
+<li>该服务器接受 incoming connections（经过一些安全检查），并接受消息以进行交付。</li>
+<li>如果消息无法交付，则会向发送方返回一个包含不可交付消息前部分的错误报告。</li>
+</ul>
+</li>
+<li>SMTP是一个简单的ASCII协议。</li>
+<li>mail server 之间的传输流程<ul>
+<li>在建立到端口25的TCP连接后，发送方（客户端）等待接收方（服务器）首先发言。</li>
+<li>服务器首先发送一行文本，给出其身份并告知是否准备好接收邮件。<ul>
+<li>如果它不准备接收邮件，客户端将释放连接并稍后重试。</li>
+<li>如果服务器愿意接收电子邮件，客户端会宣布电子邮件的发送方和接收方。</li>
+</ul>
+</li>
+<li>如果目的地存在这样的收件人，服务器会通知客户端可以发送消息。</li>
+<li>然后客户端发送消息，服务器确认接收。<ul>
+<li>不需要校验和，因为TCP提供了可靠的字节流。</li>
+</ul>
+</li>
+<li>当所有电子邮件在两个方向上交换完毕后，连接将被释放。</li>
+</ul>
+</li>
+<li>具体对话（此处从略）<ul>
+<li>所有命令都必须有四个字符，原因不明</li>
+<li>客户端的第一个命令是HELO</li>
+<li>可以使用多个RCPT命令将单个消息发送给多个接收者。<ul>
+<li>即使发给某些接收者的请求因为找不到目的地而被拒绝，消息也可以发送给其他接收者。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>缺陷：<ul>
+<li>不包括身份验证</li>
+<li>不能传输二进制数据。因此引入了base64 MIME。</li>
+<li>SMTP以明文发送消息。</li>
+</ul>
+</li>
+<li>ESMTP（扩展SMTP）<ul>
+<li>如果希望扩展，客户端第一个消息改为EHLO而不是HELO<ul>
+<li>如果被拒绝，说明服务器是一个常规的SMTP服务器，客户端应按普通方式传输。</li>
+<li>如果EHLO被接受，服务器会回复它支持的扩展。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Mail Submission<ul>
+<li>SMTP通常与AUTH扩展一起用于邮件提交。此扩展允许服务器检查客户端的凭据（用户名和密码），以确认服务器应提供邮件服务。</li>
+<li>SMTP服务器可以检查和纠正用户代理发送的消息的格式。</li>
+<li>在使用SMTP提交时，可以使用端口587而不是端口25。</li>
+</ul>
+</li>
+<li>Physical Transfer<ul>
+<li>根据邮件地址寻找正确的目标邮件服务器的过程：<ul>
+<li>查询DNS。例如，向<code>compnet@zju.edu.cn</code>发送邮件，应查询<code>zju.edu.cn</code>的MX记录</li>
+<li>发送邮件传输代理在端口25上建立到邮件服务器IP地址的TCP连接，以到达接收邮件传输代理，并使用SMTP relay（中继）消息。</li>
+<li>可能会在邮件服务器间多次跳转，如设置为自动转发或者mailind list群发。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="723-final-delivery">7.2.3 Final Delivery<a class="headerlink" href="#723-final-delivery" title="Permanent link">&para;</a></h3>
+<ul>
+<li>SMTP 只能保证将邮件传送到远程邮件服务器。</li>
+<li>IMAP（Internet Message Access Protocol）<ul>
+<li>邮件服务器运行一个监听端口143的IMAP服务器。</li>
+<li>如果使用安全传输，客户端将 secure transport，然后登录或以其他方式向服务器进行身份验证</li>
+<li>一个用户有许多IMAP mailboxes，每个邮箱通常呈现给用户作为一个 folder。</li>
+<li>IMAP 能够通过属性而不是消息编号来寻址邮件。</li>
+</ul>
+</li>
+<li>IMAP是对POP3（Post Office Protocol, version 3）的改进<ul>
+<li>POP3 安全性较低</li>
+<li>POP3 的邮件通常下载到用户代理计算机上，而不是保留在邮件服务器上。</li>
+</ul>
+</li>
+<li>WebMail<ul>
+<li>提供商像往常一样运行邮件服务器，以使用端口25上的SMTP接受用户的邮件。</li>
+<li>user agent 不是一个独立的程序，只是一个网页。</li>
+</ul>
+</li>
+</ul>
+<h2 id="73-the-world-wide-web">7.3 The World Wide Web<a class="headerlink" href="#73-the-world-wide-web" title="Permanent link">&para;</a></h2>
+<p>大家都网上冲浪，基础的内容就不用我展开说了吧。列几个可能不清楚的概念。</p>
+<ul>
+<li>static page：每次显示的时候保持一致的文档</li>
+<li>dynamic page：根据一个程序的命令或者包含程序的文档</li>
+<li>URL（Uniform Resource Locator）包含三部分<ul>
+<li>protocol（或者称为scheme）</li>
+<li>页面所在机器的 DNS name</li>
+<li>指向特定页面的 path</li>
+</ul>
+</li>
+<li>浏览器获取页面的过程（以<code>https://fcc.gov</code>为例）<ol>
+<li>浏览器确定URL（通过查看所选内容）。</li>
+<li>浏览器向DNS请求服务器<code>fcc.gov</code>的IP地址。</li>
+<li>DNS回复<code>23.1.55.196</code>。</li>
+<li>浏览器与该IP地址建立TCP连接；由于协议是HTTPS，TCP连接默认在端口443上进行（HTTP的默认端口是80，但现在使用得较少）。</li>
+<li>它发送一个HTTPS请求，请求页面<code>//</code>，Web服务器通常假设这是某个索引页面（例如，<code>index.html</code>、<code>index.php</code>或类似页面，由<code>fcc.gov</code>的Web服务器配置）。</li>
+<li>服务器以HTTPS响应发送页面，例如，通过发送文件<code>/index.html</code>，如果确定这是默认的索引对象。</li>
+<li>如果页面包含需要显示的URL，浏览器使用相同的过程获取其他URL。在这种情况下，URL包括从该服务器获取的多个嵌入图像、来自<code>gstatic.com</code>的嵌入对象以及来自<code>google-analytics.com</code>的脚本（以及其他未显示的多个域）。</li>
+<li>浏览器显示页面<code>/index.html</code>。</li>
+<li>如果在短时间内没有对同一服务器的其他请求，TCP连接将被释放。</li>
+</ol>
+</li>
+<li>
+<p>浏览器会在屏幕底部的状态行中显示它们当前正在执行的步骤</p>
+<ul>
+<li>改进：waterfall diagram</li>
+</ul>
+</li>
+<li>
+<p>URL本身不仅被设计为允许用户浏览Web（HTTP），还可以运行其它协议。</p>
+<ul>
+<li>一般浏览器在访问 mailto URL 时会启动用户的邮件代理，其中地址字段已经填写好。</li>
+</ul>
+<p><a class="glightbox" href="../static/image-20241220190505031.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220190505031" src="../static/image-20241220190505031.png" /></a></p>
+</li>
+<li>
+<p>frontend Web server 一般又称为 reverse proxy（反向代理）</p>
+</li>
+</ul>
+<h3 id="731-http">7.3.1 HTTP<a class="headerlink" href="#731-http" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>HTTP（HyperText Transfer Protocol，超文本传输协议）</p>
+<ul>
+<li>运行在TCP协议上，但目前HTTP/3也能在UDP上运行</li>
+<li>默认是 persistent connections（持久连接）。</li>
+</ul>
+</li>
+<li>
+<p>Methods（方法）</p>
+<ul>
+<li>每个请求由一行或多行ASCII文本组成，第一行（即 request line 请求行）的第一个单词是请求的方法名称。</li>
+<li>名称区分大小写。</li>
+<li>GET方法请求服务器发送页面，页面以MIME格式适当编码。<ul>
+<li>形式：<code>GET filename HTTP/1.1</code> 其中<code>1.1</code>为协议版本</li>
+</ul>
+</li>
+<li>其它方法略</li>
+</ul>
+</li>
+<li>
+<p>每个请求都会得到一个响应，该响应由 status line（状态行）和可能的附加信息（例如，全部或部分网页）组成。</p>
+<ul>
+<li>状态行包含一个三位数的HTTP status code<ul>
+<li>1xx代码很少使用。</li>
+<li>2xx代码意味着请求已成功处理，并且正在返回内容（如果有）。</li>
+<li>3xx代码指示客户端重定向，要么使用不同的URL，要么在其自己的缓存中查找。</li>
+<li>4xx代码意味着由于客户端错误（如无效请求或不存在的页面）请求失败。</li>
+<li>5xx错误意味着服务器本身存在内部问题。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Message Headers</p>
+<ul>
+<li>请求行后面可能会有提供更多信息的附加行，称为 request headers</li>
+<li>响应也可能有 response headers</li>
+<li>Cookies 是服务器放在客户端计算机上的小文件，用于记忆后面会用到的信息。</li>
+</ul>
+</li>
+</ul>
+<details class="info">
+<summary>信息头的种类</summary>
+<p>这里先不展开了……
+<a class="glightbox" href="../static/image-20250108151125152.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20250108151125152" src="../static/image-20250108151125152.png" /></a></p>
+</details>
+<ul>
+<li>
+<p>Caching（缓存）：浏览器将之前获取的页面保存下来供后续使用。</p>
+<ul>
+<li>保证数据一致性的方法<ul>
+<li>最初获取缓存页面时返回的 Expires 头以及当前日期和时间判断页面是否已过期。</li>
+<li>客户端发送 Conditional GET 请求，询问服务器它缓存的副本是否仍然有效</li>
+<li>客户端从 Last-Modified 头中知道缓存页面最近一次更新的时间，然后使用 If-Modified-Since 头将这个时间发送到服务器，问它页面在此期间有没有发生过变化。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>HTTP 各版本特征</p>
+<ul>
+<li>
+<p>HTTP/1.0：连接建立后会发送一个请求并返回一个响应，然后释放TCP连接</p>
+</li>
+<li>
+<p>HTTP/1.1：支持 persistent connections。建立TCP连接后连续进行发送请求-接收响应-发送请求-……。这种策略也称为 connection reuse（连接重用）。</p>
+<ul>
+<li>由于TCP拥塞控制，多个短TCP连接传输信息的时间比一个长TCP连接要长得多。</li>
+<li>可以用 pipelined request 提高性能</li>
+<li>关闭连接的时机：闲置一段时间之后，或者有大量连接打开的时候</li>
+<li>在出现 persistent connections 之前，使用过并行连接的策略，但连接之间相互竞争可能导致不必要的拥塞问题。</li>
+</ul>
+<p><a class="glightbox" href="../static/image-20241220193649911.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20241220193649911" src="../static/image-20241220193649911.png" /></a></p>
+</li>
+<li>
+<p>HTTP/2</p>
+<ul>
+<li>编码方式与交互方式的变化<ul>
+<li>建立TCP连接后可以发送许多请求，可能是二进制的、优先的。<ul>
+<li>服务器可以按任何顺序响应它们。</li>
+<li>只有在所有请求都得到回答后，TCP连接才会被关闭。</li>
+</ul>
+</li>
+<li>server push：服务器在客户端发送一个请求之后，预测并提前发送一些文件和信息。</li>
+<li>压缩头并以二进制形式发送</li>
+<li>HTTP/2会话由一系列帧组成，每个帧都有一个单独的标识符，以支持乱序发回。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>HTTP/3</p>
+<ul>
+<li>依赖于一个增强版本的UDP，称为QUIC</li>
+<li>QUIC传输协议支持流多路复用和每个流的流量控制，提供流级别的可靠性和连接范围的拥塞控制来提升性能。</li>
+<li>连接建立以后，HTTP/3允许客户端在多个不同的URL上重用该连接。</li>
+<li>QUIC保证单个流内字节的可靠、有序交付，但它不对其他QUIC流上的字节提供任何保证。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>HTTPS（Secure HyperText Transfer Protocol）可以理解为使用一个称为TLS（Transport Layer Security）的安全传输协议的HTTP协议。</p>
+</li>
+</ul>
+<h3 id="732-web-privacy">7.3.2 Web Privacy<a class="headerlink" href="#732-web-privacy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cookies<ul>
+<li>使用HTTP中的<code>set-cookie</code> message header 设置</li>
+<li>允许网站跟踪用户在网站上的持续行为的有用信息</li>
+<li>same-origin policy：由一个域设置的cookie只能由设置cookie的同一域看到</li>
+<li>cross-site tracking：如果需要从第三方加载内容，可以由第三方设置cookie，这种情况下的cookie跨域也生效<ul>
+<li>super cookies 可以让中间方随着时间的推移跨网站跟踪用户。</li>
+<li>Unique identifiers 包括编码在HTTP中的第三方跟踪标识符（如HSTS）头，在用户清除cookie时不会被清除。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Third-Party Trackers<ul>
+<li>广告商通过包括HTTP cookie在内的各种跟踪机制收集用户数据<ul>
+<li>当用户访问多个使用相同广告商的网站时，该广告网络会识别用户的设备，跟踪用户的Web行为。</li>
+</ul>
+</li>
+<li>cross-device tracking：将单个用户在多个设备上的活动联系起来</li>
+<li>许多这类技术不需要用户登录任何网站即可启用跟踪。</li>
+<li>cookie syncing（cookie 同步）：用于第三方合作。难以检测。</li>
+</ul>
+</li>
+<li>即使用户禁用了第三方cookie等常见的跟踪机制，网站和第三方仍然可以基于各种返回的信息来跟踪用户<ul>
+<li>举例：canvas fingerprinting</li>
+</ul>
+</li>
+</ul>
+<h2 id="75-content-delivery略">7.5 Content Delivery（略）<a class="headerlink" href="#75-content-delivery略" title="Permanent link">&para;</a></h2>
+<p>这个真能考？先跳过了。</p>
+<ul>
+<li>CDN（Content Delivery Network / Content Distribution Network）：常见的 distributing content architecture<ul>
+<li>一个很大的分布式缓存的集合，用于直接向客户端提供内容。 </li>
+</ul>
+</li>
+<li>P2P（Peer-to-Peer）</li>
+<li>Zipf's law：对于<span class="arithmatex">\(N\)</span>个项目，对第<span class="arithmatex">\(k\)</span>受欢迎的项目的请求占所有请求的比例大约是<span class="arithmatex">\(C/k\)</span>，其中<span class="arithmatex">\(C = 1/(1 + 1/2 + 1/3 + 1/4 + 1/5 + ... + 1/N)\)</span></li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年1月10日 22:41:07</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年1月10日 22:41:07</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy 2024 ZhengliangDuanfang
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../supports/js/xlink.js"></script>
+      
+        <script src="../supports/js/katex.js"></script>
+      
+        <script src="https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

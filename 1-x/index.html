@@ -1,0 +1,1369 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../2-x/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>1: Introduction - ZhengliangDuanfang-计算机网络</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../supports/css/base.css">
+    
+      <link rel="stylesheet" href="../supports/css/theme.css">
+    
+      <link rel="stylesheet" href="../supports/css/admonitions.css">
+    
+      <link rel="stylesheet" href="https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-introduction" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="ZhengliangDuanfang-计算机网络" class="md-header__button md-logo" aria-label="ZhengliangDuanfang-计算机网络" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZhengliangDuanfang-计算机网络
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1: Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZhengliangDuanfang/T-ComputerNetworks
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ziji-cs.github.io/" class="md-tabs__link">
+        
+  
+    
+  
+  Home Project
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Main
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ZhengliangDuanfang-计算机网络" class="md-nav__button md-logo" aria-label="ZhengliangDuanfang-计算机网络" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ZhengliangDuanfang-计算机网络
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZhengliangDuanfang/T-ComputerNetworks
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ziji-cs.github.io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Main
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Main
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1: Introduction
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1: Introduction
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#小角龙" class="md-nav__link">
+    <span class="md-ellipsis">
+      小角龙
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="小角龙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-网络模型" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 网络模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-协议架构" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 协议架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-服务-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 服务 Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cs模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 C/S模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-网络传输" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 网络传输
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#原文摘录" class="md-nav__link">
+    <span class="md-ellipsis">
+      原文摘录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="原文摘录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-uses-of-computer-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Uses of Computer Networks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-types-of-computer-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Types of Computer Networks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-network-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Network Technologies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-network-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Network Protocols
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5 Network Protocols">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-design-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.1 Design Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-protocol-layering" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2 Protocol Layering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-connections-and-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.3 Connections and Reliability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-reference-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 Reference Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-metric-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9 Metric Units
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2: Physical Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3: Data Link Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4: MAC Sublayer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5: Network Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6: Transport Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7: Application Layer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8: Network Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#小角龙" class="md-nav__link">
+    <span class="md-ellipsis">
+      小角龙
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="小角龙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-网络模型" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 网络模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-协议架构" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 协议架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-服务-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 服务 Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cs模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 C/S模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-网络传输" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 网络传输
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#原文摘录" class="md-nav__link">
+    <span class="md-ellipsis">
+      原文摘录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="原文摘录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-uses-of-computer-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Uses of Computer Networks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-types-of-computer-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Types of Computer Networks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-network-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Network Technologies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-network-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Network Protocols
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5 Network Protocols">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-design-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.1 Design Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-protocol-layering" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.2 Protocol Layering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-connections-and-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.3 Connections and Reliability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-reference-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 Reference Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-metric-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9 Metric Units
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks/blob/main/docs/1-x.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/ZhengliangDuanfang/T-ComputerNetworks/raw/main/docs/1-x.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+<h1 id="1-introduction">1: Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2535 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 13 分钟</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>前半部分仅删改小角龙笔记；因为很容易出概念题，后半部分摘录书上原文，作为补充。</p>
+</div>
+<h2 id="小角龙">小角龙<a class="headerlink" href="#小角龙" title="Permanent link">&para;</a></h2>
+<h3 id="11-网络模型">1.1 网络模型<a class="headerlink" href="#11-网络模型" title="Permanent link">&para;</a></h3>
+<ul>
+<li>OSI 七层模型：三个重要概念：服务，接口和协议<ul>
+<li>物理层：在一条通信信道上传输比特<ul>
+<li>要确定用什么电子信号表示0和1，一个比特持续多久，传输是否可以双向，连接如何建立等等</li>
+</ul>
+</li>
+<li>数据链路层：发送方将输入数据拆分成若干数据帧(frame)，然后按照一定的顺序来发送这些数据帧<ul>
+<li>接收方必须确认收到的每一帧，保证数据的顺序和完整性，然后发回确认帧</li>
+<li>为了防止发送方淹没慢速的接收方，需要对流量进行调节</li>
+<li><strong>介质访问控制子层</strong>则是控制对共享信道的访问，没有拥塞控制的功能</li>
+</ul>
+</li>
+<li>网络层：控制子网的运行，将数据包从源端发送到接收方，需要处理拥塞<ul>
+<li>允许异构的网络相互连接成互联网络</li>
+</ul>
+</li>
+<li>传输层：接受会话层的数据，将数据分割成小单元，然后传到网络层<ul>
+<li>传输层是真正的端到端的层，始终将源数据从源端带到接收方</li>
+<li>OSI模型中1-3层是链式连接的，而4-7层是端到端的</li>
+</ul>
+</li>
+<li>会话层：负责管理主机间的会话进程，利用传输层提供的端到端的服务，向表示层提供增值服务，主要表现为<strong>表示层实体或者用户进程</strong>建立连接并在连接上传输数据<ul>
+<li>这一过程也称为建立同步</li>
+</ul>
+</li>
+<li>表示层：关注传递信息的语法和语义，主要是实现数据的格式转换和压缩</li>
+<li>应用层：包含了各种各样的协议，提供了用户和网络的接口<ul>
+<li>软件开发基本都是应用层的工作
+<a class="glightbox" href="../static/image-20200922231442750.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20200922231442750" src="../static/image-20200922231442750.png" /></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>TCP/IP<ul>
+<li>原本是Linux/Unix下的一个网络通信栈，比较OSI七层模型简单</li>
+<li><strong>没有表示层和会话层</strong>，物理层和数据链路层Host-to-network</li>
+<li>因为开放，所以用的人多，所以成为了互联网的标准</li>
+</ul>
+</li>
+<li>混合模型 hybrid model：本课程讨论的模型<ul>
+<li>物理层</li>
+<li>数据链接层</li>
+<li>网络层：可能分为内层和外层</li>
+<li>传输层</li>
+<li>应用层</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-协议架构">1.2 协议架构<a class="headerlink" href="#12-协议架构" title="Permanent link">&para;</a></h3>
+<ul>
+<li>数据传输的过程：<ul>
+<li>在source machine中，数据自顶向下传输，每一层会给上一层传输的数据包添加一个header，如果传输的数据包过大则会把数据包进行拆分，但是<strong>header不会进行拆分</strong> </li>
+<li>在destination machine中，则一步步去掉底层的header，并将小的数据包合并</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-服务-service">1.3 服务 Service<a class="headerlink" href="#13-服务-service" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>服务类型</p>
+<ul>
+<li>面向连接的服务 connection-oriented<ul>
+<li>Reliable message stream 可信信息流，比如page的序列</li>
+<li>Reliable byte stream 可信字节流，比如远程登录，TCP/IP协议向应用层发送的是字节流</li>
+<li>Unreliable connection 不可信连接，比如数字化语音</li>
+</ul>
+</li>
+<li>不需要连接的服务 connection-less<ul>
+<li>Unreliable datagram 不可信数据报，比如垃圾邮件</li>
+<li>Acknowledged datagram 共识数据包，比如注册邮件</li>
+<li>Request-reply 请求回复，比如数据库查询</li>
+</ul>
+</li>
+<li>QoS 服务的质量</li>
+</ul>
+</li>
+<li>
+<p>服务原语 Service Primitives</p>
+<ul>
+<li>面向连接服务的5个服务原语</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Primitive</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LISTEN</td>
+<td>等待一个还没来的连接</td>
+</tr>
+<tr>
+<td>CONNECT</td>
+<td>和一个等待的对等层进行连接</td>
+</tr>
+<tr>
+<td>RECEIVE</td>
+<td>等待一个还没来的message</td>
+</tr>
+<tr>
+<td>SEND</td>
+<td>向对等层发送一个message</td>
+</tr>
+<tr>
+<td>DISCONNECT</td>
+<td>结束一个连接</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Request--Indication--Response--Confirm</li>
+</ul>
+</li>
+</ul>
+<h3 id="14-cs模式">1.4 C/S模式<a class="headerlink" href="#14-cs模式" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Client-Server Model 客户端主动连接，服务端被动连接<ul>
+<li>客户端之间不能直接通信，客户端的通信也需要经过服务器</li>
+<li>新技术：服务器分配端口，让两个客户端直接通信，不需要所有数据经过服务器</li>
+<li>当客户端升级的时候需要更新整个客户端，手机APP就是C/S模式</li>
+</ul>
+</li>
+<li>Browser-Server Model 从C/S体系发展而来<ul>
+<li>通过浏览器来实现用户和服务端的交互，只需要升级浏览器</li>
+</ul>
+</li>
+<li>
+<p>Peer-to-peer Model(P2P模式)——对等网络</p>
+<ul>
+<li>每个客户端同时又是服务端，没有固定的客户端和服务端</li>
+</ul>
+</li>
+<li>
+<p>wireless network 无线网络</p>
+<ul>
+<li>注意和移动计算mobile computing的区别，移动计算可以是有线的，可以是无线的</li>
+<li>wifi就是一种无线网络</li>
+</ul>
+</li>
+</ul>
+<h3 id="15-网络传输">1.5 网络传输<a class="headerlink" href="#15-网络传输" title="Permanent link">&para;</a></h3>
+<ul>
+<li>三种传输方式：<ul>
+<li>Broadcast links 广播式传输<ul>
+<li>传输模型类似于<strong>总线</strong>，总分式结构</li>
+<li>以太网的原理都是基于广播的</li>
+</ul>
+</li>
+<li>Point-to-point links 点对点传输<ul>
+<li>传输模型是一张复杂的网——网络拓扑结构</li>
+<li>一次只发给一台计算机</li>
+</ul>
+</li>
+<li>multicasting 多点广播<ul>
+<li>传输模型是一个环，一次发给一组计算机</li>
+<li>不是天然存在的，需要通过软件系统来实现多点广播机制</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>网络的类型：按照规模来划分<ul>
+<li>个人区域网 Personal area network(PAN)</li>
+<li>局域网 Local area network(LAN)</li>
+<li>层域网Metropolitan area network(MAN)<ul>
+<li>技术的可替代性比较强，局域网大一点就可以作为层域网，广域网小一点就可以作为层域网</li>
+</ul>
+</li>
+<li>广域网Wide area network(WAN)<ul>
+<li>特点是会有很多router和subnet</li>
+</ul>
+</li>
+<li>最大的网络就是因特网 The Internet</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="原文摘录">原文摘录<a class="headerlink" href="#原文摘录" title="Permanent link">&para;</a></h2>
+<h3 id="11-uses-of-computer-networks">1.1 Uses of Computer Networks<a class="headerlink" href="#11-uses-of-computer-networks" title="Permanent link">&para;</a></h3>
+<p><strong>Computer network</strong> means a collection of interconnected, autonomous computing devices.</p>
+<p><strong>Internet</strong> is the most well-known example of a network of networks.</p>
+<p>The <strong>client-server model</strong> is widely used and forms the basis of much network
+usage. The most popular realization is that of a <strong>Web application</strong>, where a server generates Web pages based on its database in response to client requests that may update the database.</p>
+<p>Another popular model for accessing information is <strong>peer-to-peer communication</strong>. Every person can, in principle, communicate with one or more other people; there is no fixed division into clients and servers.</p>
+<p><strong>Ubiquitous computing</strong> entails computing that is embedded in everyday life.</p>
+<p>Devices such as televisions can use <strong>power-line networks</strong> to send information throughout the house over the wires that carry electricity.</p>
+<h3 id="12-types-of-computer-networks">1.2 Types of Computer Networks<a class="headerlink" href="#12-types-of-computer-networks" title="Permanent link">&para;</a></h3>
+<p>计算机网络的主要种类包含 <strong>Broadband Access Networks</strong> 和 <strong>Mobile and Wireless Access Networks</strong>。</p>
+<p>Wireless network</p>
+<ul>
+<li><strong>Cellular networks</strong> operated by telephone companies </li>
+<li><strong>Wireless hotspots</strong> based on the 802.11 standard</li>
+</ul>
+<p>Although wireless networking and mobile computing are not identical: <strong>fixed wireless</strong> and <strong>mobile wireless</strong> networks. </p>
+<p><a class="glightbox" href="../static/image-20250110182546733.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20250110182546733" src="../static/image-20250110182546733.png" /></a></p>
+<p><strong>Smartphones</strong> combine aspects of mobile phones and mobile computers, connect to wireless hotspots and automatically switch between networks to choose the best option for the user. </p>
+<ul>
+<li><strong>Text messaging</strong> or texting (<strong>SMS Short Message Service</strong>) over the cellular network was popular.</li>
+<li>Mobile phones are being increasingly used in <strong>m-commerce</strong> (mobile-commerce).<ul>
+<li>Equipped with <strong>NFC (Near Field Communication)</strong>, the mobile can act as an RFID smartcard and interact with a nearby reader for payment.</li>
+</ul>
+</li>
+<li><strong>GPS (Global Positioning System)</strong> can directly locate a device, and mobile phones often also triangulate between Wi-Fi hotspots with known locations to determine their location. <strong>geo-tagging</strong></li>
+</ul>
+<p><strong>Sensor networks</strong> have nodes that gather and relay information they sense about the state of the physical world. </p>
+<p>Modern <strong>data center networks</strong> have hundreds of thousands or millions of servers in a single location, serving <strong>cloud computing</strong> and are designed to move large amounts of data between servers in the data center / between the data center and the rest of the Internet.</p>
+<p><strong>CDN (Content Delivery Network)</strong> is a large collection of servers that are geographically distributed in such a way that content is placed as close as possible to the users that
+are requesting it.</p>
+<p>When the content provider and your <strong>ISP (Internet Service Provider)</strong> are not directly connected, they often rely on a <strong>transit network</strong> to carry the traffic between them. Transit networks are traditionally called <strong>backbone networks</strong> because they have had the role of carrying traffic between two endpoints. </p>
+<p>Networks called <strong>VPNs (Virtual Private Networks)</strong> connect the individual networks at different sites into one logical network.</p>
+<p>A computer network can provide a powerful <strong>communication medium</strong> among employees.</p>
+<p>Telephone calls between employees may be carried by the computer network instead of by the phone company, this is called <strong>IP telephony</strong> or <strong>VoIP (Voice over IP)</strong>.</p>
+<p><strong>Desktop sharing</strong> lets remote workers see and interact with a graphical computer screen.</p>
+<h3 id="13-network-technologies">1.3 Network Technologies<a class="headerlink" href="#13-network-technologies" title="Permanent link">&para;</a></h3>
+<p><strong>PANs (Personal Area Networks)</strong> let devices communicate over the range of a person. A common example is a wireless network that connects a computer with its peripherals.</p>
+<p>A <strong>LAN (Local Area Network)</strong> is a private network that operates within and nearby a single building.</p>
+<p>In wireless LANs (<strong>IEEE 802.11</strong>), each computer talks to a device called an <strong>AP (Access Point), wireless router, or base station</strong>.</p>
+<p>Another common scenario entails nearby devices relaying packets for one another in a so-called <strong>mesh network</strong> configuration. In some cases, the relays are the same nodes as the endpoints, more commonly, a mesh network will include a separate collection of nodes whose sole responsibility is relaying traffic.</p>
+<p>Many wired LANs comprise point-to-point wired links. <strong>IEEE 802.3</strong>, popularly called <strong>Ethernet</strong>, is by far the most common type of wired LAN.</p>
+<ul>
+<li>A switch has multiple <strong>ports</strong>, each of which can connect to one other device, such as a computer or even another switch.</li>
+</ul>
+<p>A <strong>MAN (Metropolitan Area Network)</strong> covers a city. The best-known examples of MANs are the cable television networks.</p>
+<ul>
+<li>Both television signals and Internet are fed into the centralized <strong>cable head-end</strong>.</li>
+</ul>
+<p>A collection of interconnected networks is called an <strong>internetwork or internet</strong>. We will use these terms in a generic sense, in contrast to the global <strong>Internet</strong> (which is one specific internet).</p>
+<p>The device that connects two or more networks and provides the necessary translation, both in terms of hardware and software, is a <strong>gateway</strong>.</p>
+<h3 id="15-network-protocols">1.5 Network Protocols<a class="headerlink" href="#15-network-protocols" title="Permanent link">&para;</a></h3>
+<h4 id="151-design-goals">1.5.1 Design Goals<a class="headerlink" href="#151-design-goals" title="Permanent link">&para;</a></h4>
+<p>Reliability</p>
+<ul>
+<li>error detection &amp; correction</li>
+<li>routing: finding a working path through a network</li>
+</ul>
+<p>Resource Allocation</p>
+<ul>
+<li>Designs that continue to work well when the network gets large are said to be <strong>scalable</strong>.</li>
+<li><strong>statistical multiplexing</strong>: sharing based on the statistics of demand.</li>
+<li><strong>flow control</strong>: Feedback from the receiver to the sender.</li>
+<li><strong>congestion</strong>: the network is oversubscribed because too many computers want to send too much traffic.</li>
+<li><strong>real-time</strong> delivery</li>
+<li><strong>Quality of service (QoS)</strong> is the name given to mechanisms that reconcile these competing demands.</li>
+</ul>
+<p>Evolvability</p>
+<ul>
+<li><strong>protocol layering</strong>: the key structuring mechanism used to support change by dividing the overall problem and hiding implementation details.</li>
+<li><strong>addressing (in low layers) or naming (in high layers)</strong>: identifying the senders and receivers that are involved in a particular message.</li>
+<li><strong>internetworking</strong>: number messages &amp; disassembling, transmitting, and then reassembling messages.</li>
+</ul>
+<p>Security</p>
+<ul>
+<li><strong>confidentiality</strong>: defend eavesdropping on communications</li>
+<li><strong>authentication</strong>: prevent someone from impersonating someone else</li>
+<li><strong>integrity</strong>: prevent surreptitious changes to messages</li>
+</ul>
+<h4 id="152-protocol-layering">1.5.2 Protocol Layering<a class="headerlink" href="#152-protocol-layering" title="Permanent link">&para;</a></h4>
+<p>To reduce their design complexity, most networks are organized as a stack of <strong>layers or levels</strong>.</p>
+<p>A <strong>protocol</strong> is an agreement between the communicating parties on how communication is to proceed.</p>
+<p>The entities comprising the corresponding layers on different machines are called <strong>peers</strong>, may be software processes, hardware devices, or even human beings. </p>
+<ul>
+<li>peers communicate by using the protocol.</li>
+</ul>
+<p>Between each pair of adjacent layers is an <strong>interface</strong>, it defines which primitive operations and services the lower layer makes available to the upper one.</p>
+<p>A set of layers and protocols is called a <strong>network architecture</strong>.</p>
+<p>A list of the protocols used by a certain system, one protocol per layer, is called a <strong>protocol stack</strong>.</p>
+<h4 id="153-connections-and-reliability">1.5.3 Connections and Reliability<a class="headerlink" href="#153-connections-and-reliability" title="Permanent link">&para;</a></h4>
+<p><strong>Connection-oriented service</strong>: when a connection is established, the sender, receiver, and subnet conduct a <strong>negotiation</strong> about the parameters to be used. </p>
+<ul>
+<li>A circuit is another name for a connection with associated resources, such as a fixed bandwidth.</li>
+</ul>
+<p><strong>Connectionless service</strong>: Each message carries the full destination address, and each one is routed through the intermediate nodes inside the system independent of all the subsequent messages.</p>
+<ul>
+<li><strong>store-and-forward switching</strong>: the intermediate nodes receive a message in full before sending it on to the next node. </li>
+<li><strong>cut-through switching</strong>: the onward transmission of a message at a node starts before it is completely received by the node.</li>
+</ul>
+<p><strong>acknowledged datagram service</strong>: Used when not having to establish a connection to send one message is desired, but reliability is essential. It is like sending a registered letter and requesting a return receipt.</p>
+<p><strong>request-reply service</strong>: the sender transmits a single datagram containing a request; the reply contains the answer. client-server model.</p>
+<p><a class="glightbox" href="../static/image-20250110192906359.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20250110192906359" src="../static/image-20250110192906359.png" /></a></p>
+<h3 id="16-reference-models">1.6 Reference Models<a class="headerlink" href="#16-reference-models" title="Permanent link">&para;</a></h3>
+<p>OSI失败的原因：Bad Timing、Bad Design、Bad Implementations、Bad Politics</p>
+<h3 id="19-metric-units">1.9 Metric Units<a class="headerlink" href="#19-metric-units" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="../static/image-20250110191834565.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20250110191834565" src="../static/image-20250110191834565.png" /></a></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年1月10日 22:41:07</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年1月10日 22:41:07</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy 2024 ZhengliangDuanfang
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../supports/js/xlink.js"></script>
+      
+        <script src="../supports/js/katex.js"></script>
+      
+        <script src="https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
