@@ -24,8 +24,7 @@
 
 !!! section "编写进度"
 
-    - [x] [Chapter 1: Introduction](./1-x.md)（使用小角龙笔记原文）
-        - 待补充：本章所有内容
+    - [x] [Chapter 1: Introduction](./1-x.md)
     - [x] [Chapter 2: Physical Layer](./2-x.md)
     	- 待补充：2.2-2.3、2.5.2-DSL、2.9
     - [x] [Chapter 3: Data Link Layer](./3-x.md)
